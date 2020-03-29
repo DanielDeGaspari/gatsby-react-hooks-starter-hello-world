@@ -1,0 +1,39 @@
+{
+  "name": "gatsby-react-hooks-starter-hello-world",
+  "private": true,
+  "description": "A simple hello world website using Gatsby & react hooks & react helmet",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Daniel De Gaspari",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanielDeGaspari/gatsby-react-hooks-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/DanielDeGaspari/gatsby-react-hooks-starter-hello-world/issues"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "start": "npm run develop",
+    "test": "echo \"Write tests!\""
+  },
+  "dependencies": {
+    "gatsby": "^2.19.7",
+    "gatsby-plugin-react-helmet": "^3.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "husky": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build",
+      "pre-push": "npm run test"
+    }
+  }
+}

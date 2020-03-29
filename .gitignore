@@ -1,0 +1,6 @@
+# Output
+node_modules/
+
+# Gatbsy
+.cache/
+public/
